@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>New Password</title>
+<script>
+     function validation()
+	{
+	 var password = document.getElementById("pass").value;
+     	var confirmpass = document.getElementById("conpass").value;
+		         if(password=="")
+     		{
+     			document.getElementById('passw').innerHTML="**Please Enter Password";
+     			return false;
+     		}
+     		if((password.length<=5)||(password.length>=20))
+     		{
+     			document.getElementById('passw').innerHTML="** Password length must be between 5 and 20";
+     			return false;
+     		}
+     		if(confirmpass=="")
+     		{
+     			document.getElementById('confpass').innerHTML="**Please Confirm Password";
+     			return false;
+     		}
+     		if(password!=confirmpass)
+     		{
+     			document.getElementById('confpass').innerHTML="**Password Dose Not Match";
+     			return false;
+     		}
+            else 
+			{
+			  document.getElementById("confpass").innerHTML="** Password properly matched";
+			}
+	}
+			</script>
+<style>
+.multi{
+background-color:rgba(0,0,0,0.3);
+width:500px;}
+</style>
+</head><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body style="background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);">
+<center><br><br><br>
+<div class="multi">
+<h1>Create new password</h1>
+<form action="SignIn.html" onsubmit="return validation()">
+Enter new Password<input type="password" id="pass" name="pass">
+<br><span color="white"id="passw"></span><br>
+Confirm Password<input type="password" id="conpass" name="conpass">
+<br><span color="white" id="confpass"></span><br>
+<input type="submit" name="submit" value="Submit"></input>
+</form>
+</center>
+</div></body>
+</html>

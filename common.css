@@ -1,0 +1,149 @@
+body{
+background-color:gray;}
+
+#he{
+background-color:black;
+width:1340px;
+height:120px;
+}
+
+.ma{
+float:right;
+padding:4px;
+color:black;
+background-color:pink;
+width:110px;
+height:15px;
+border:1px dashed pink;
+border-radius:9px;}
+
+.ca{
+background-color:blue;
+width:1340px;
+height:42px;
+border-bottom:5px solid red;}
+
+#preorder{
+	background-color:rgba(255,255,255,0.3);
+	width:1400px;
+	height:390px;
+}
+
+/*Animation on search bar*/
+input[type=text] {
+    width: 100px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width:98%;
+	background-color:pink;
+	opacity:0.1px;
+} 
+
+a.one:link{color:white;}
+a.one:visited{color:white}
+a.one:hover{font-size:49px;
+animation-name:exm;
+animation-duration:3s;}
+
+a.two:link{color:black;
+text-decoration:none;}
+a.two:visited{color:black;
+text-decoration:none;}
+a.two:hover{color:green;
+text-decoration:none;}
+
+
+a.four:link{color:black;
+text-decoration:none;}
+a.four:visited{color:black;
+text-decoration:none;}
+a.four:hover{
+color:black;
+font-size:25px;
+text-decoration:none;
+background-color:white;
+}
+
+
+.te{
+font-family:Georgia;
+text-decoration:none;
+}
+
+#types{
+float:right;
+background-color:rgba(255,255,255,0.4);
+margin:4px;
+}
+
+div.gallery {
+    margin: 8px;
+    border: 2px solid #ccc;
+    float: left;
+    width: 200px;
+}
+
+div.gallery:hover {
+    border: 2px solid #777;
+	
+}
+
+
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+	
+}
+@keyframes exm{
+0%{color:yellow;}
+    25%  {color:khaki; }
+    50%  {color:orange; }
+    75%  {color:red;}
+    100% {color:brown; }}
+	
+#container{
+width:874px;
+overflow:hidden;
+}
+
+@keyframes slideranimation{
+0%{left:0px;
+}
+20%{left:0px;
+}
+25%{
+left:-874px;
+}
+30%{
+left:-874px;
+}
+40%{
+left:-1748px;}
+50%{
+left:-1748px;}
+60%{
+left:-2622px;}
+70%{
+left:-2622px;}
+75%{left:-3496px;}
+80%{
+left:-3496px;}
+85%{
+left:-4370px;}
+90%{
+left:-4370px;}
+}
+
+#sliderbox{
+position:relative;
+width:6000px;
+animation-name:slideranimation;
+animation-duration:30s;
+animation-iteration-count:infinite;
+margin:0px;
+}

@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>contact us</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.multi{
+background-color:rgba(0,0,0,0.3);
+width:480px;
+}
+a.one:hover{
+color:green;
+background-color:black;}
+</style>
+<script>
+
+ function validation()
+     {
+     	var user = document.getElementById("user").value;
+		
+     	var password = document.getElementById("pass").value;
+     	
+     	var emails = document.getElementById("emails").value;
+if(user.length==0)
+     		{   document.getElementById("username").innerHTML="**Please Enter Username";
+     			return false;
+     		}
+     	   else if((user.length<=2)||(user.length>=20))
+     		{
+     			document.getElementById("username").innerHTML="** Username length must be between 2 and 20";
+     			return false;
+     		}
+     	  else if(!isNaN(user))
+     		{
+     	       document.getElementById("username").innerHTML="** Only Characters are allowed";
+     			return false;
+     		}
+		  else
+		  {document.getElementById("username").innerHTML="** Correct input";
+		  }
+		   if(password=="")
+     		{
+     			document.getElementById('passw').innerHTML="**Please Enter Password";
+     			return false;
+     		}
+     		if((password.length<=5)||(password.length>=20))
+     		{
+     			document.getElementById('passw').innerHTML="** Password length must be between 5 and 20";
+     			return false;
+     		}
+if(emails=="")
+     		{
+     			document.getElementById('mail').innerHTML="**Please Enter Email";
+     			return false;
+     		}
+     		if(emails.indexOf('@',0)==0)
+     		{
+     			document.getElementById('mail').innerHTML="**Invalid Email";
+     			return false;
+     		}
+     		if((emails.charAt(email.length-4)!='.')&&(emails.charAt(email.length-3)!='.'))
+     		{
+     			document.getElementById('mail').innerHTML="**Invalid Email";
+     			return false;
+     		}
+			
+}
+</script>
+
+</head>
+<body style="background-color:rgba(255,0,0,0.3);"><center>
+<div style="background-color:green;">
+<h1 style="font-size:40px;background-color:rgba(255,255,255,.5);width:290px;">Get In Touch</h1>
+<a class="one" href="home.html"><i style="float:right;font-size:35px;color:background-color:white;"class="fa fa-home"></i></a>
+</div>
+<b style="font-size:20px;">Email us with any questions or inquiries or <i style="color:green; font-size:25px;"class="fa fa-phone-square"></i>
+<span style="color:blue;"> 518-387-9327</span>.We would be <br>
+happy to answer your questions and set up a meeting with you.<span style="font-size:20px;color:red;">
+BAKTS[Books A Key To Success]</span><br>can help set you apart from the flock!.</b><br><br>
+
+<div class="multi"><br>
+<b style="color:white;font-size:40px;">Contact Us</b><br><br><br>
+<form action="home.html" onsubmit="return validation()">
+<b>Name</b> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="Text" name="user" id="user" placeholder="Enter your name"><br><span id="username"></span><br>
+<b>Email</b> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="Text" name="emails" id="emails" placeholder="Enter your mail"><br><span id="mail"></span><br>
+<b>Password</b> <input type="password" name="pass" id="pass" placeholder="Enter your password"><br><span id="passw"></span><br>
+<b>Message</b>&nbsp&nbsp
+<textarea rows="3" cols ="22"> Enter Your message here.."</textarea><br><br>
+<input type="submit" name="submit" value="Submit"><br><br><br>
+<i style="float:left;color:white;background-color:blue;font-size:40px;width:120px;"class="fa fa-facebook"></i>
+<i style="float:left;color:white;background-color:red;font-size:40px;width:120px;"class="fa fa-instagram"></i>
+<i style="float:left;color:white;background-color:blue;font-size:40px;width:120px;"class="fa fa-twitter"></i>
+<i style="float:left;color:white;background-color:red;font-size:40px;width:120px;"class="fa fa-linkedin"></i>
+</form>
+</div>
+</center></body>
+</html>
